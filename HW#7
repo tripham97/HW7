@@ -1,0 +1,47 @@
+#00
+random = [1, 4, 6, 8, 4, 11, 24, 12, 45, 64]
+a_list = [x for x in random]
+print(a_list)
+
+#01
+c_list = []
+d_list = []
+for i in range (0,5):
+    c_list.append(i)
+    d_list.append(i+1)
+print(c_list)
+print(d_list)
+print("Tổng: ", c_list + d_list)
+print("Tích: ", c_list * len(d_list))
+
+#02
+e_list = [1, 4, 5, 7, 7, 9, 0, 33]
+if e_list != []:
+    max_list = e_list[0]
+    for i in range(len(e_list)):
+        if e_list[i] > max_list:
+            max_list = a_list[i]
+    print(f"Max = {max_list}")
+else:
+    print(f"Chuoi Rong")
+
+#03
+f_list = [2, 4, 6, 7, 3]
+s = ["xin chào", "home", 9, 12]
+print (f_list + s)
+
+#04
+g_list = [3, 4, 5, 6, 7, 8, 8, 13, 13]
+n_1 = input("Enter the 1st part: ")
+h_list = []
+h_list.append(n_1)
+print(h_list + g_list)
+
+#05
+e_list = [3,3,2,2,1,4]
+e1 = []
+for i in e_list:
+    if i not in e1:
+        e1.append(i)
+    else:
+        print(i)
